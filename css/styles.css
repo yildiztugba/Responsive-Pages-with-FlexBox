@@ -86,4 +86,8 @@ nav>ul>li a {
 /*Footer*/
 footer {
    display: flex;
+   flex-direction: column;
+}
+footer > p, footer > address{
+    margin: 0.5rem 0;
 }
