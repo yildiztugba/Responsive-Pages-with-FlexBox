@@ -45,6 +45,7 @@ nav>ul>li a {
 .mainContent ul{
     padding-inline-start: 2px;
     margin-right: 1.5rem;
+    padding: .5rem;
 }
 
 .mainContent ul>a>li{
@@ -92,10 +93,28 @@ nav>ul>li a {
     margin: 5px 10px;
 }
 
+.main{
+    display: flex;
+    flex-direction: column;
+}
+.pieRow{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.leftMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /*Footer*/
 footer {
    display: flex;
    flex-direction: column;
+   align-items: center;
 }
 footer > p, footer > address{
     margin: 0.5rem 0;
