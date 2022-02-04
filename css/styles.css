@@ -92,6 +92,7 @@ nav>ul>li a {
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,.3);
     padding: .4rem;
+    flex-grow: 2;
 }
 .pieCard >h5 , .pieCard>p {
     margin: 0.2rem 0;
@@ -130,9 +131,19 @@ nav>ul>li a {
     display: flex;
     flex-direction: row;
     margin-bottom: 10px;
-    justify-content: space-between;
+  
     flex-wrap: wrap;
     align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,.3);
+    padding: .5rem;
+}
+.pieRow > div{
+    flex-grow: 2;
+}
+.pieRow h5, .pieRow p{
+    margin: 0;
+    padding-left: .5rem ;
 }
 .leftMenu{
     display: flex;
@@ -147,4 +158,11 @@ footer {
 }
 footer > p, footer > address{
     margin: 0.5rem 0;
+}
+
+@media screen  and (max-width: 600px){
+    .leftMenu{
+        order:1;
+    }
+    
 }
